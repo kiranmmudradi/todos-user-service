@@ -9,8 +9,13 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    public UserController(){
+        System.out.println("Test 1:: KiranMudraid");
+    }
+
     @PostMapping("/addUser")
     public User addUser(@RequestBody User user){
+
         return userService.saveUser(user);
     }
 
