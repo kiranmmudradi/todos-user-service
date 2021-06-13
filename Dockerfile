@@ -12,7 +12,7 @@ CMD [ \
 "-Dhibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect", \
 "-Ddatasource.hostname=todosdb.c1j8neznq1ig.ap-south-1.rds.amazonaws.com", \
 "-Ddatasource.db=todosdb", \
-"-Ddatasource.username=root", \
-"-Ddatasource.password=password", \
+"-Dspring.datasource.username=root", \
+"-Dspring.datasource.password=password", \
 "target/todos-user-service.jar" \
 ]
