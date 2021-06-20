@@ -6,12 +6,14 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class UserController {
-    @Autowired
-    private UserService userService;
 
     public UserController(){
-        System.out.println("Test 1:: KiranMudraid");
+
+        System.out.println("Test 1:: KiranMudradi");
     }
+
+    @Autowired
+    private UserService userService;
 
     @PostMapping("/addUser")
     public User addUser(@RequestBody User user){
