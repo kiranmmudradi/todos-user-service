@@ -13,9 +13,9 @@ import org.springframework.core.env.MutablePropertySources;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class PropertyLogger {
-    private static final Logger LOGGER = LoggerFactory.getLogger(PropertyLogger.class);
+    /* private static final Logger LOGGER = LoggerFactory.getLogger(PropertyLogger.class);
 
     @EventListener
     public void handleContextRefresh(ContextRefreshedEvent event) {
@@ -31,5 +31,5 @@ public class PropertyLogger {
                 .filter(prop -> !(prop.contains("credentials") || prop.contains("password")))
                 .forEach(prop -> LOGGER.info("{}: {}", prop, env.getProperty(prop)));
         LOGGER.info("===========================================");
-    }
+    }*/
 }
